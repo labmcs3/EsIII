@@ -10,7 +10,7 @@ function HeatLeftPeak_Explicit
   T0           = 20;
   DeltaT       = 80;
   T            = ones(1,N)*T0;
-  T((N-1)/2+1) = T0+DeltaT;
+  T(1)         = T0+DeltaT;
   % Evoluzione temporale
   t    = 0; tend = 1e-3;
   while t<tend
